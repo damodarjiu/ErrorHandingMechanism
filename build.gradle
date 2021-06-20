@@ -21,9 +21,15 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.5.9'
+	implementation group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+	implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+	implementation group: 'org.codehaus.groovy', name: 'groovy', version: '3.0.8'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+
 }
 
 test {
